@@ -20,8 +20,7 @@ class EndPointscontroller {
             this.getEndPoint(endPoint).then(endPoint => {
                 $('.js__server-end-points').append(`
                 <tr>
-                    <td>${endPoint.name}</td>
-                    <td><a target="_blank" href="${endPoint.url}">${endPoint.url}</a></td>
+                    <td><a target="_blank" href="${endPoint.url}">${endPoint.name}</a></td>
                 </tr>`)
             });
         });
@@ -29,8 +28,7 @@ class EndPointscontroller {
             this.getEndPoint(endPoint).then(endPoint => {
                 $('.js__test-maker-end-points').append(`
                 <tr>
-                    <td>${endPoint.name}</td>
-                    <td><a target="_blank" href="${endPoint.url}">${endPoint.url}</a></td>
+                    <td><a target="_blank" href="${endPoint.url}">${endPoint.name}</a></td>
                 </tr>`)
             });
         });
