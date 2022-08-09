@@ -3,6 +3,10 @@ class EndPointscontroller {
         name: 'argocd',
         url: '',
         token: '29OLfrflhD4CiUW7HTC7LkrHd1q_6Eojoxvjoy8qYxmKtqjj1'
+    },{
+        name: 'ssh',
+        url: '',
+        token: '2A3pcj15xBCidNr1U7fNHEvsVt4_rphzWD9zR8DL5LrMViyZ'
     }];
 
     testMakerEndPoints = [{
