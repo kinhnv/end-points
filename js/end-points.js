@@ -33,7 +33,7 @@ class EndPointscontroller {
                 else if (endPoint.type == 2) {
                     $('.js__server-end-points').append(`
                     <tr>
-                        <td><p>${endPoint.name}: ${endPoint.url}</p></td>
+                        <td><p>${endPoint.name}: ssh kinhn@${endPoint.url.substring(6, 23)} -p ${endPoint.url.substring(24)}</p></td>
                     </tr>`)
                 }
             });
