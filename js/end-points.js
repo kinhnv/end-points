@@ -24,13 +24,13 @@ class EndPointscontroller {
     constructor() {
         this.serverEndPoints.forEach(endPoint => {
             this.getEndPoint(endPoint).then(endPoint => {
-                if (endPoint == 1) {
+                if (endPoint.type == 1) {
                     $('.js__server-end-points').append(`
                     <tr>
                         <td><a target="_blank" href="${endPoint.url}">${endPoint.name}</a></td>
                     </tr>`)
                 }
-                else if (endPoint == 2) {
+                else if (endPoint.type == 2) {
                     $('.js__server-end-points').append(`
                     <tr>
                         <td><p>${endPoint.name}: ${endPoint.url}</p></td>
