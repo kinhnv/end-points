@@ -18,7 +18,7 @@ class EndPointscontroller {
         name: 'mongodb',
         type: 4,
         url: '',
-        token: '2A3pcj15xBCidNr1U7fNHEvsVt4_rphzWD9zR8DL5LrMViyZ'
+        token: '2EkvymZNZuNRaeh1cMPZsXHiMwt_4qmzS6HQccsg6ZFM9uRhp'
     }];
 
     testMakerEndPoints = [{
