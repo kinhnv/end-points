@@ -9,6 +9,16 @@ class EndPointscontroller {
         type: 2,
         url: '',
         token: '2A3pcj15xBCidNr1U7fNHEvsVt4_rphzWD9zR8DL5LrMViyZ'
+    },{
+        name: 'mssql',
+        type: 3,
+        url: '',
+        token: '29kkiBzD1TkeuQULDmwlJ66R5Hz_4GJNQp5yYHjmy6wV5Yw1t'
+    },{
+        name: 'mongodb',
+        type: 4,
+        url: '',
+        token: '2A3pcj15xBCidNr1U7fNHEvsVt4_rphzWD9zR8DL5LrMViyZ'
     }];
 
     testMakerEndPoints = [{
@@ -34,6 +44,18 @@ class EndPointscontroller {
                     $('.js__server-end-points').append(`
                     <tr>
                         <td><p>${endPoint.name}: ssh kinhn@${endPoint.url.substring(6, 23)} -p ${endPoint.url.substring(24)}</p></td>
+                    </tr>`)
+                }
+                else if (endPoint.type == 3) {
+                    $('.js__server-end-points').append(`
+                    <tr>
+                        <td><p>${endPoint.name}: ${endPoint.url.substring(6, 23)},${endPoint.url.substring(24)}</p></td>
+                    </tr>`)
+                }
+                else if (endPoint.type == 4) {
+                    $('.js__server-end-points').append(`
+                    <tr>
+                        <td><p>${endPoint.name}: mongodb://${endPoint.url.substring(6, 23)}:${endPoint.url.substring(24)}</p></td>
                     </tr>`)
                 }
             });
