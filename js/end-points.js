@@ -5,6 +5,11 @@ class EndPointscontroller {
         url: '',
         token: '29OLfrflhD4CiUW7HTC7LkrHd1q_6Eojoxvjoy8qYxmKtqjj1'
     },{
+        name: 'vault',
+        type: 1,
+        url: '',
+        token: '2EsfXkRxFhRK2SJAABHUl3X67Bm_5E9pAsS2ka88bwbrPhZoZ'
+    },{
         name: 'ssh',
         type: 2,
         url: '',
