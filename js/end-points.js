@@ -24,6 +24,10 @@ class EndPointscontroller {
         type: 4,
         url: '',
         token: '2EkvymZNZuNRaeh1cMPZsXHiMwt_4qmzS6HQccsg6ZFM9uRhp'
+    },{
+        name: 'grafana',
+        type: 1,
+        url: 'https://kinhnv1801.grafana.net'
     }];
 
     testMakerEndPoints = [{
